@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 2.1rem !important;
+}
+
+body {
+  font-family: sahel, serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #ff61ac;
+  --primary-color-light: #FFECF5;
+  --text-gray-900: #666;
+  --text-gray-700: #999;
+  --text-gray-500: #b2b2b2;
+}
+
+@font-face {
+  font-family: sahel;
+  src: url("../fonts/Sahel.ttf");
+}
+
+@font-face {
+  font-family: tanha;
+  src: url("../fonts/Tanha.ttf");
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+/* SET DEFAULT SHADOW TO BUTTONS */
+.shadow-btn {
+  padding: 0.3rem 1.6rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: all 0.3s !important;
+  background: transparent;
+}
+
+.shadow-btn:hover {
+  box-shadow: none;
+}
+
+.shadow-btn::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  left: 0;
+  border-radius: 50px;
+}
+
+.shadow-btn:hover::after {
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* CHANGE PART OF TEXTS */
+.inner-part-text {
+  color: var(--primary-color);
+}
+
+.main-title{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  font-family: tanha, serif;
+}
